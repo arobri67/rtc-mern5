@@ -29,16 +29,17 @@ The server will be running at http://localhost:4001.
 
 ## Endpoints
 
-Base Routes
+Base Routes:
 
-GET /: Home route that returns a welcome message.
+- GET /: Home route that returns a welcome message.
 
-### Pokémon Routes
-GET /pokemon/: Retrieves information about all Pokémon.
-GET /pokemon/:id: Retrieves information about a specific Pokémon by ID.
-POST /pokemon/: Creates a new Pokémon entry.
-PUT /pokemon/:id: Updates the Pokédex status of a Pokémon.
-DELETE /pokemon/:id: Deletes a Pokémon entry.
+Pokémon Routes:
+
+- GET /pokemon/: Retrieves information about all Pokémon.
+- GET /pokemon/:id: Retrieves information about a specific Pokémon by ID.
+- POST /pokemon/: Creates a new Pokémon entry.
+- PUT /pokemon/:id: Updates the Pokédex status of a Pokémon.
+- DELETE /pokemon/:id: Deletes a Pokémon entry.
 
 ## Database
 
