@@ -12,6 +12,7 @@ const pokemonSchema = new mongoose.Schema({
     defense: Number,
     speed: Number,
   },
+  pokedex: Boolean,
 });
 
 const Pokemon = mongoose.model("Pokemon", pokemonSchema);

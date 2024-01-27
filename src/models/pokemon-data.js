@@ -14,6 +14,7 @@ let pokemons = [
       defense: 78,
       speed: 100,
     },
+    pokedex: true,
   },
   {
     name: "Pikachu",
@@ -28,6 +29,7 @@ let pokemons = [
       defense: 40,
       speed: 90,
     },
+    pokedex: true,
   },
   {
     name: "Gyarados",
@@ -42,6 +44,7 @@ let pokemons = [
       defense: 79,
       speed: 81,
     },
+    pokedex: true,
   },
   {
     name: "Blastoise",
@@ -56,6 +59,7 @@ let pokemons = [
       defense: 100,
       speed: 78,
     },
+    pokedex: true,
   },
   {
     name: "Bulbasaur",
@@ -70,6 +74,7 @@ let pokemons = [
       defense: 49,
       speed: 45,
     },
+    pokedex: true,
   },
   {
     name: "Zoroark",
@@ -84,6 +89,7 @@ let pokemons = [
       defense: 60,
       speed: 105,
     },
+    pokedex: false,
   },
   {
     name: "Metagross",
@@ -98,6 +104,7 @@ let pokemons = [
       defense: 130,
       speed: 70,
     },
+    pokedex: true,
   },
   {
     name: "Glaceon",
@@ -112,6 +119,7 @@ let pokemons = [
       defense: 110,
       speed: 65,
     },
+    pokedex: false,
   },
   {
     name: "Sylveon",
@@ -126,6 +134,7 @@ let pokemons = [
       defense: 65,
       speed: 60,
     },
+    pokedex: true,
   },
   {
     name: "Leafeon",
@@ -140,6 +149,7 @@ let pokemons = [
       defense: 130,
       speed: 95,
     },
+    pokedex: true,
   },
   {
     name: "Umbreon",
@@ -154,13 +164,14 @@ let pokemons = [
       defense: 110,
       speed: 65,
     },
+    pokedex: true,
   },
 ];
 const clearAndInsertMonData = async () => {
   try {
     await Pokemon.collection.drop();
     await Pokemon.insertMany(pokemons);
-    console.log("[***] Pokemon data insert to the DB [***]");
+    console.log("[***] Initial data seeding sucessfull [***]");
   } catch (err) {
     "Error inserting data", err;
   }
