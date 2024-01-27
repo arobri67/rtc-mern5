@@ -51,5 +51,5 @@ Upon starting the server, the initial data seeding script is executed, clearing 
 
 ## Error Handling
 
-404: Not Found - Returned for wrong URL requests.
-500: Internal Server Error - General error handling for unexpected issues.
+- 404: Not Found - Returned for wrong URL requests.
+- 500: Internal Server Error - General error handling for unexpected issues.
