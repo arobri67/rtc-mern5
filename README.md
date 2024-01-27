@@ -29,7 +29,7 @@ The server will be running at http://localhost:4001.
 
 ## Endpoints
 
-### Base Routes
+Base Routes
 
 GET /: Home route that returns a welcome message.
 
