@@ -173,7 +173,7 @@ const clearAndInsertMonData = async () => {
     await Pokemon.insertMany(pokemons);
     console.log("[***] Initial data seeding sucessfull [***]");
   } catch (err) {
-    "Error inserting data", err;
+    console.log("Error inserting data", err);
   }
 };
 
